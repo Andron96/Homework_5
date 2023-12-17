@@ -13,7 +13,7 @@ for ($i = 0; $i < $arrayLength; $i++) {
 }
 echo "Неотсортированный массив: ";
 foreach ($ourArray as $key => $value) {
-    if ($key == array_key_last($ourArray)) {
+    if ($key === array_key_last($ourArray)) {
         echo "[$key] = $value. \n";
         break;
     }
@@ -22,7 +22,7 @@ foreach ($ourArray as $key => $value) {
 asort($ourArray);
 echo "Отсортированный по возрастанию массив: ";
 foreach ($ourArray as $key => $value) {
-    if ($key == array_key_last($ourArray)) {
+    if ($key === array_key_last($ourArray)) {
         echo "[$key] = $value. \n";
         break;
     }
